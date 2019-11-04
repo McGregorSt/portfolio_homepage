@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, NavLink, BrowserRouter } from "react-router-dom";
+
+import Portfolio from "./components/Navigation/Portfolio/Portfolio";
+import * as styles from './App.css'
+
 
 function App() {
+  
+
+  // const portfolio = projects.map(project => {
+  //   return <Portfolio title={project.title} main={project.main} link={project.link} />
+  // })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'> 
+        <Portfolio />
     </div>
-  );
+  ) 
 }
 
 export default App;
