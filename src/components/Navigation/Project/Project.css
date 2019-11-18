@@ -13,8 +13,9 @@
 }
 .Project:hover {
   height: 280px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 40px rgba(10, 92, 92, 0.8);
+  color: #fff;
+  background-color: rgba(36, 75, 80, 0.8);
+  box-shadow: 0 0 40px rgba(10, 92, 92, 0.2);
   text-align: center;
   /* transform: scale(1.03) ; */
 

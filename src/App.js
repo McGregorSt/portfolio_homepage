@@ -1,22 +1,25 @@
 import React from "react";
-import { Route, NavLink, BrowserRouter } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import Portfolio from "./components/Navigation/Portfolio/Portfolio";
-import * as styles from './App.css'
-
+import Contact from './components/Contact/Contact'
+import * as styles from "./App.css";
 
 function App() {
-  
-
-  // const portfolio = projects.map(project => {
-  //   return <Portfolio title={project.title} main={project.main} link={project.link} />
-  // })
+  // let routes = (
+  //   <Switch>
+  //     <Route path="/">
+  //       <Redirect from="/portfolio_homepage" to="/fx_holder" />
+  //     </Route>
+  //   </Switch>
+  // );
 
   return (
-    <div className='App'> 
-        <Portfolio />
+    <div className="App">
+      <Portfolio />
+      <Contact />
     </div>
-  ) 
+  );
 }
 
 export default App;

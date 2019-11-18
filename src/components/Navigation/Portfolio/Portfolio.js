@@ -20,7 +20,7 @@ const projects = [
                 volume of active clients, volume of assets, volume of
                 accounts). App was built with React, styled in CSS and is
                 responsive.`,
-    link: '/management_web_reports',
+    link: '/management-web-reports',
     slided: false
   },
   {
@@ -35,15 +35,8 @@ const projects = [
   
 ]
 
-
-
 class Portfolio extends Component {
 
-
-
-
-
-  
   render () {
     const portfolio = projects.map((project, ind, arr) => {
       return <Project 
@@ -54,6 +47,7 @@ class Portfolio extends Component {
         onMouseOver={(ev) => this.onMouseOverHandler(ev, ind, arr)}
         onMouseOut={() => this.onMouseOutHandler()}
         slided={project.slided}
+        
         />
     })
     return (
