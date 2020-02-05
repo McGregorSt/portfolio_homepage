@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: 'Web design',
-    descreption: `Web development based on provided designs. This page is retina ready with its 2k graphics, with some features alived with jQuery. There is a video modal built on iframe with overlay. Page is RWD.`,
+    descreption: `Web development based on provided designs. This page is retina ready with its 2x graphics, with some features made alive with jQuery. There is a video modal built on iframe with overlay. Page is RWD.`,
     link: '/newOne',
     slided: false
   },
