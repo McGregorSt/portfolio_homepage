@@ -1,0 +1,18 @@
+body {
+  font-family: 'Rajdhani';
+  background-image: linear-gradient(to right top, #384559, #2c6b89, #0095af, #00c1c0, #12ebbc);
+  
+
+
+  /* background-repeat: no-repeat; */
+  /* background-image: url('./assets/backgroundImage/marvin.jpg');
+  background-size: cover;
+  position: relative; */
+  overflow-y: scroll;
+}
+
+.App {
+  /* background-size: 100% 200%; */
+  margin-left: 200px;
+  margin-top: 20px;
+}

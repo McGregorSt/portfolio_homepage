@@ -1,0 +1,23 @@
+.Project {
+  width: 370px;
+  height: 70px;
+  box-shadow: 0 0 2em rgba(10, 92, 92, 0.425);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0px;
+  transition: ease 0.4s; 
+  padding: 15px;
+  color: rgb(0, 0, 0);
+}
+.Project:hover {
+  height: 180px;
+  color: #fff;
+  background-color: #3a7bd53f;
+  box-shadow: 0 0 40px rgba(10, 92, 92, 0.2);
+  text-align: center;
+  /* transform: scale(1.03) ; */
+
+}

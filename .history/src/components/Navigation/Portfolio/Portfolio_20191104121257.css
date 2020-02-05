@@ -1,0 +1,12 @@
+.Portfolio {
+  margin-right: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.Portfolio a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}

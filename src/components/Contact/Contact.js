@@ -1,18 +1,18 @@
 import React from "react";
 
 import ContactMethod from "./ContactMethod/ContactMethod";
-import * as classes from "./Contact.css";
+import "./Contact.css";
 
 const Contact = () => {
   const contactData = [
     {
       link: "mailto: stasiak.gregor@gmail.com",
-      icon: './gmail.png',
+      icon: './gm.png',
       text: 'EmailMe'
     },
     {
       link: "https://www.linkedin.com/in/grzegorz-stasiak",
-      icon: "./linked.png",
+      icon: "./in.png",
       text: 'LinkedIn'
     }
   ];
@@ -20,10 +20,14 @@ const Contact = () => {
   return (
     <div className="Contact">
       <h1>Contact me:</h1>
-      {console.log(contactData)}
       {contactData.map((elm, index) => {
         return (
-          <a href={elm.link} key={index}>
+          <a href={elm.link} 
+             key={index} 
+             target='_blank' 
+             className='Contact---icon'
+             rel="noopener noreferrer"
+             >
             <ContactMethod icon={elm.icon} />
           </a>
         );

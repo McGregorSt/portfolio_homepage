@@ -1,0 +1,14 @@
+body {
+  font-family: 'Rajdhani';
+  /* background: #525252;   */
+  /* background: -webkit-linear-gradient(to right, #3d72b4, rgb(82, 82, 82));  */
+  background: -webkit-linear-gradient(to left top,#0095af, #00c1c0, #12ebbc); 
+  background: linear-gradient(to left,  #0095af, #00c1c0, #12ebbc); 
+  overflow-y: scroll;
+}
+
+.App {
+  /* background-size: 100% 200%; */
+  margin-left: 200px;
+  margin-top: 20px;
+}

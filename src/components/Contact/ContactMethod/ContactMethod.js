@@ -1,12 +1,10 @@
 import React from "react";
 
-// import { NavLink } from 'react-router-dom'
-import * as styles from './ContactMethod.css'
-import ddd from '../../../assets/icons/logo192.png'
+import './ContactMethod.css'
 
 const ContactMethod = ({ icon, scale }) => {
   return (
-    <div className='ContactMethod' 
+    <div className='ContactMethod'
         style={{backgroundImage: `url(${icon})`}}>
           
     </div>

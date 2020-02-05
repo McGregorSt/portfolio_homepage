@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Project from '../Project/Project'
-import * as styles from './Portfolio.css'
+import './Portfolio.css'
 
 const projects = [
   {
@@ -31,10 +31,31 @@ const projects = [
     link: '/burger_builder',
     slided: false
   },
-  
-  
+  {
+    title: 'Polluted Cities',
+    descreption: `Built with ES6, web app for searching top ten most polluted cities in provided country. Data are provided from public API https://docs.openaq.org/ and cities descriptions come from Wikipedia API.`,
+    link: '/polluted_cities/',
+    slided: false
+  },
+  {
+    title: 'Marilyn',
+    descreption: `Web app based on React and Redux. This app gives you 9 most recently uploaded pictures of Marilyn Monroe from Flickr (Flickr API). It was styled with CSS modules and it is responsive`,
+    link: '/marilyn',
+    slided: false
+  },
+  {
+    title: 'Colour Game',
+    descreption: `Game rules: click colour square which at least has one the same colour naighbour (not diagonnaly) and collect as much points as possible. Clicked squares disappear, all above them move down and missing ones are newly generated. App was built with React and Redux`,
+    link: '/colour_game',
+    slided: false
+  },
+  {
+    title: 'ethworks',
+    descreption: `Game rules: click colour square which at least has one the same colour naighbour (not diagonnaly) and collect as much points as possible. Clicked squares disappear, all above them move down and missing ones are newly generated. App was built with React and Redux`,
+    link: '/colour_game',
+    slided: false
+  },
 ]
-
 class Portfolio extends Component {
 
   render () {
@@ -47,16 +68,18 @@ class Portfolio extends Component {
         onMouseOver={(ev) => this.onMouseOverHandler(ev, ind, arr)}
         onMouseOut={() => this.onMouseOutHandler()}
         slided={project.slided}
-        
+        id={ind + 1}
+        style={{'backgroundColor': '#abe'}}
         />
     })
     return (
-      <div className='Portfolio'>
-        <h2>My projects:</h2>
-        { portfolio }
+      <div className="Projects">
+        <h2 className='portfolio__header'>My projects:</h2>
+        <div className='Portfolio'>
+          { portfolio }
+        </div>
       </div>
     )
-
   }
 }
 
