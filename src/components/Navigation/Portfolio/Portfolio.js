@@ -50,9 +50,9 @@ const projects = [
     slided: false
   },
   {
-    title: 'ethworks',
-    descreption: `Game rules: click colour square which at least has one the same colour naighbour (not diagonnaly) and collect as much points as possible. Clicked squares disappear, all above them move down and missing ones are newly generated. App was built with React and Redux`,
-    link: '/colour_game',
+    title: 'Web design',
+    descreption: `Web development based on provided designs. This page is retina ready with its 2k graphics, with some features alived with jQuery. There is a video modal built on iframe with overlay. Page is RWD.`,
+    link: '/newOne',
     slided: false
   },
 ]
